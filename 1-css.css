@@ -12,7 +12,7 @@ html{
 }
 h1 {
     text-align: center;
-    background-image: radial-gradient(#e4aab5, #879de9);
+    background-image: radial-gradient(#5a4b4d, #879de9);
     width: 100%;
     height: 70px;
     font-size: 50px;
@@ -33,12 +33,6 @@ h1 {
 
     }
   }
-#ps{
-    font-size: 2px;
-    color: white;
-    width: 100%;
-    text-align: center;
-}
 button{
     background-color: #aaa;
     border-radius: 20px;
@@ -73,7 +67,7 @@ details[open] {
 details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: 0.5em;
-    background-image: linear-gradient(to right, rgb(240, 255, 205) , rgb(194, 241, 200));
+    background: linear-gradient(-45deg, #aae991, #c1db97, #a6d6e7, #84dfc9);
 }
 
 .vid-wrap{
