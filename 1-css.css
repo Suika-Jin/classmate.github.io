@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "cushu";
+    src: url("PangMenZhengDaoCuShuTi-2.ttf");
+}
+@font-face {
+    font-family: "maoxing";
+    src: url("YouSheYuFeiTeJianKangTi-2.ttf");
+}
+
+html{
+    border-width: 5px;
+}
+h1 {
+    text-align: center;
+    background-image: radial-gradient(#e4aab5, #879de9);
+    width: 100%;
+    height: 70px;
+    font-size: 50px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: ani 3s infinite ease-in-out;
+    font-family: cushu;
+  }
+
+  @keyframes ani {
+    0% {
+      background-position: 250px 200px;
+    }
+
+    100% {
+      background-position: 450px 400px;
+
+    }
+  }
+#ps{
+    font-size: 2px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+button{
+    background-color: #aaa;
+    border-radius: 20px;
+}
+
+details {
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+} 
+  
+summary {
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 40px;
+    font-size: 20px;
+}
+  
+details[open] {
+    border-radius: 0 0 10px 10px;
+    background-color: #ddd;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+    font-family: maoxing;
+    font-size: 18px;
+}
+  
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+    background-image: linear-gradient(to right, rgb(240, 255, 205) , rgb(194, 241, 200));
+}
+
+.vid-wrap{
+    width:100%;background: #000;
+    position:relative;
+    padding-bottom:56.25%;    /*需要用padding来维持16:9比例,也就是9除以16*/
+    height: 0;
+}
+.vid-wrap video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
